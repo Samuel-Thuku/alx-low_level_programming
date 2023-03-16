@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -Wall c
+gcc $CFILE=main.c -Wall c
