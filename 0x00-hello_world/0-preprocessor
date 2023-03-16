@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE=main.c -Wall c
+gcc export CFILE=main.c -Wall c
