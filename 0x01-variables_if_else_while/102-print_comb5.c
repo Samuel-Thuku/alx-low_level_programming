@@ -20,7 +20,7 @@ int main(void)
 			digit4 = 0;
 			while (digit4 < 10)
 			{
-				if ((digit4 + digit3) > (digit2 + digit1))
+				if ((digit4 + digit3) >= (digit2 + digit1))
 				{
 				putchar('0' + digit1);
 				putchar('0' + digit2);
