@@ -14,7 +14,7 @@ int main(void)
 		digit2 = 0;
 		while (digit2 < 10)
 		{
-			if (digit1 == 0 || digit2 > digit1)
+			if (digit2 > digit1)
 			{
 			putchar('0' + digit1);
 			putchar('0' + digit2);
