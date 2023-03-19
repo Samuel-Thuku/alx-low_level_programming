@@ -11,11 +11,9 @@ int main(void)
 	digit1 = 0;
 	while (digit1 < 99)
 	{
-		digit2 = 0;
+		digit2 = digit1 + 1;
 		while (digit2 < 100)
 		{
-			if (digit2 >= digit1)
-			{
 			putchar('0' + (digit1 / 10));
 			putchar('0' + (digit1 % 10));
 			putchar(' ');
@@ -29,7 +27,6 @@ int main(void)
 			{
 				putchar(',');
 				putchar(' ');
-			}
 			}
 		digit2++;
 		}
