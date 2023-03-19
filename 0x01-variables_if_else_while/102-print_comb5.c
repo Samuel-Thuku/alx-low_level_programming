@@ -14,26 +14,28 @@ int main(void)
 	digit2 = 0;
 	while (digit2 < 10)
 		{
-		digit3 = 1;
+		digit3 = 0;
 		while (digit3 < 10)
 		{
-			digit4 = 2;
+			digit4 = 0;
 			while (digit4 < 10)
 			{
+				if ((digit4 + digit3) > (digit2 + digit1))
+				{
 				putchar('0' + digit1);
 				putchar('0' + digit2);
 				putchar(' ');
 				putchar('0' + digit3);
 				putchar('0' + digit4);
-				if 
 				putchar(',');
 				putchar(' ');
+				}
 				digit4++;
 			}
-		digit3++;
+			digit3++;
 		}
 		digit2++;
-	}
+		}
 	digit1++;
 	}
 	putchar('\n');
