@@ -6,38 +6,31 @@
 */
 int main(void)
 {
-	int digit1, digit2, digit3, digit4;
-
+	int digit1, digit2;
+	
 	digit1 = 0;
-	while (digit1 < 10)
+	while (digit1 < 99)
 	{
-	digit2 = 0;
-	while (digit2 < 10)
+		digit2 = 0;
+		while (digit2 < 100)
 		{
-		digit3 = 0;
-		while (digit3 < 10)
-		{
-			digit4 = 0;
-			while (digit4 < 10)
+			putchar('0' + (digit1/10));
+			putchar('0' + (digit1%10));
+			putchar(' ');
+			putchar('0' + (digit2/10));
+			putchar('0' + (digit2%10));
+			if (digit1 == 98 && digit2 == 99)
 			{
-				if ((digit4 + digit3) >= (digit2 + digit1))
-				{
-				putchar('0' + digit1);
-				putchar('0' + digit2);
-				putchar(' ');
-				putchar('0' + digit3);
-				putchar('0' + digit4);
+				putchar('\n');
+			}
+			else
+			{
 				putchar(',');
 				putchar(' ');
-				}
-				digit4++;
 			}
-			digit3++;
-		}
 		digit2++;
 		}
-	digit1++;
+		digit1++;
 	}
-	putchar('\n');
 	return (0);
 }
