@@ -4,15 +4,17 @@
 *
 *Return: Always 0 (Success)
 */
-int main(void)
+void print_alphabet(void);
 {
-	char c;
+	char alphabet;
 
-	c = 'a';
-	while (c <= 'z')
+	alphabet = 'a';
+	while (alphabet <= 'z')
 	{
-		_putchar(c);
+		_putchar(alphabet);
+		alphabet++;
 	}
 	_putchar('\n');
-	return (0);
+
+	return (alphabet);
 }
