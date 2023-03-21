@@ -8,11 +8,13 @@
 int _islower(int c)
 {
 
-	c = 97;
+	if (c >= 97)
+	{
 	while (c <= 122)
 	{
 		return (1);
 		c++;
+	}
 	}
 	return (0);
 }
