@@ -14,7 +14,7 @@ int main(void)
 	for (num1 = 0; num1 < 98; num1++)
 	{
 		num4 = num2 + num3;
-		if (num1 == 88)
+		if (num1 > 88)
 		{
 		printf("%lu", (num4 / 10000000000));
 		printf("%lu", (num4 % 10000000000));
