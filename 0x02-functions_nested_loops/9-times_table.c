@@ -5,7 +5,7 @@
  */
 void times_table(void)
 {
-	int num1, num2;
+	int num1, num2, product;
 
 	num1 = 0;
 	while (num1 < 10)
@@ -13,7 +13,9 @@ void times_table(void)
 		num2 = 0;
 		while (num2 < 10)
 		{
-			_putchar('0' + (num1 * num2));
+			product = num1 * num2;
+			_putchar('0' + (product / 10));
+			_putchar('0' + (product % 10));
 			if (num2 < 9)
 			{
 				_putchar(',');
