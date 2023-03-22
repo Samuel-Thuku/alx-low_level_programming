@@ -11,7 +11,7 @@ int main(void)
 
 	num2 = 0;
 	num3 = 1;
-	for (num1 = 0; num1 < 90; num1++)
+	for (num1 = 0; num1 < 93; num1++)
 	{
 		num4 = num2 + num3;
 		printf("%lu", num4);
