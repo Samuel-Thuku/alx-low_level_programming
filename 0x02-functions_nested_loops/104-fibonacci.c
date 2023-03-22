@@ -7,14 +7,14 @@
 int main(void)
 {
 	int num1;
-	long long int num2, num3, num4;
+	unsigned long int num2, num3, num4;
 
 	num2 = 0;
 	num3 = 1;
 	for (num1 = 0; num1 < 99; num1++)
 	{
 		num4 = num2 + num3;
-		printf("%lld", num4);
+		printf("%lu", num4);
 		if (num1 < 98)
 		{
 			printf(", ");
