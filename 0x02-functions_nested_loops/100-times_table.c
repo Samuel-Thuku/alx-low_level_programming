@@ -1,8 +1,14 @@
 #include "main.h"
+/**
+ *print_times_table - prints the n times table, starting with 0.
+ *
+ */
 void print_times_table(int n)
 {
 	int num1, num2, product;
 
+	if (n < 16 && n >= 0)
+	{
 	for (num1 = 0; num1 <= n; num1++)
 	{
 		for (num2 = 0; num2 <= n; num2++)
@@ -36,5 +42,6 @@ void print_times_table(int n)
 			}
 		}
 		_putchar('\n');
+	}
 	}
 }
