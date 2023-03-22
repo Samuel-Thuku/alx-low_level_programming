@@ -2,7 +2,7 @@
 /**
  * _abs - determines the absolute value of an integer
  *
- *@int: - absolute the true value computed
+ *@num: - number being checked
  *
  *Return: absolute value
  *
