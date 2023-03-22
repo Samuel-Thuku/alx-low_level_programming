@@ -11,5 +11,5 @@ int multiples_3_and_5(int num1)
 			num2 = num2 + num1;
 		}
 	}
-	printf("%d\n", num2);
+	return (num2);
 }
