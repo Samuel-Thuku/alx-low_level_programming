@@ -8,11 +8,9 @@
  */
 void print_to_98(int n)
 {
-	int num;
-
 	while (n <= 98)
 	{
-		return (num);
+		return (n);
 		if (n < 98)
 		{
 			_putchar(',');
