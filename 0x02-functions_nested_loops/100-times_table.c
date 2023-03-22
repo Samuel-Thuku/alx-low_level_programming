@@ -21,6 +21,7 @@ void print_times_table(int n)
 					if (num2 > 0 && num2 <= n)
 					{
 						_putchar(' ');
+						_putchar(' ');
 					}
 					_putchar('0' + product);
 				}
