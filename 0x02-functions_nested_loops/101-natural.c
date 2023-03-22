@@ -1,7 +1,8 @@
 #include <stdio.h>
-int main(void)
+#include "main.h"
+int multiples_3_and_5(int num1)
 {
-	int num1, num2;
+	int num2;
 
 	for (num1 = 1024; num1 >= 0; num1--)
 	{
