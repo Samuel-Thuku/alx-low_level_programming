@@ -7,21 +7,21 @@
 int main(void)
 {
 	int num1;
-	long int num2, num3, num4, num5;
+	long int num2, num3, num4;
 
-	num2 = 0;
-	num3 = 1;
-	for (num1 = 0; num4 < 4000000; num1++)
+	num2 = 1;
+	num3 = 2;
+	num4 = num3;
+	while (num2 + num3 < 4000000)
 	{
-		num4 = num2 + num3;
-		if ((num4 % 2) == 0)
+		num3 = num3 + num2;
+		if ((num3 % 2) == 0)
 		{
-			num5 = 0 + num4;
+			num4 = num4  + num3;
 		}
-		num2 = num3;
-		num3 = num4;
+		num2 = num3 - num2;
+		num1++;
 	}
-	printf("%ld", num5);
-	printf("\n");
+	printf("%ld\n", num4);
 	return (0);
 }
