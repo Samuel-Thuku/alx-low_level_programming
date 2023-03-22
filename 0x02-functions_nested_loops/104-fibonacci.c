@@ -11,11 +11,11 @@ int main(void)
 
 	num2 = 0;
 	num3 = 1;
-	for (num1 = 0; num1 < 99; num1++)
+	for (num1 = 0; num1 < 98; num1++)
 	{
 		num4 = num2 + num3;
 		printf("%lu", num4);
-		if (num1 < 98)
+		if (num1 < 97)
 		{
 			printf(", ");
 		}
