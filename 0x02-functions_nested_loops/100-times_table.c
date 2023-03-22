@@ -17,6 +17,11 @@ void print_times_table(int n)
 				}
 				_putchar('0' + product);
 			}
+			if (num2 < n)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 	}
 }
