@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include "main.h"
-int multiples_3_and_5(int num1)
+int main(void)
 {
-	int num2;
+	int num1, num2;
 
 	for (num1 = 1024; num1 >= 0; num1--)
 	{
@@ -11,5 +10,6 @@ int multiples_3_and_5(int num1)
 			num2 = num2 + num1;
 		}
 	}
-	return (num2);
+	printf("%d\n", num2);
+	return (0);
 }
