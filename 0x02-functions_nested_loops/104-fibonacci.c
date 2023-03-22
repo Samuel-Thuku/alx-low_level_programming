@@ -19,10 +19,7 @@ int main(void)
 		printf("%lu", (num4 % 10000000000));
 		}
 		num4 = num2 + num3;
-		if (num1 <= 88)
-		{
 		printf("%lu", num4);
-		}
 		if (num1 < 97)
 		{
 			printf(", ");
