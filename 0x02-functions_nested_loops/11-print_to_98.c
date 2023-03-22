@@ -6,7 +6,7 @@
 *
 *Return: num the number being printed out
  */
-void print_to_98(int n)
+int print_to_98(int n)
 {
 	while (n <= 98)
 	{
