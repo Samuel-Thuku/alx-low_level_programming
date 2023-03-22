@@ -11,7 +11,7 @@ int main(void)
 
 	num2 = 0;
 	num3 = 1;
-	for (num1 = 0; num5 <= 4000000; num1++)
+	for (num1 = 0; num4 < 4000000; num1++)
 	{
 		num4 = num2 + num3;
 		if ((num4 % 2) == 0)
