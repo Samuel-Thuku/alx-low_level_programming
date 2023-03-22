@@ -7,14 +7,22 @@
 int main(void)
 {
 	int num1;
-	unsigned long long int num2, num3, num4;
+	unsigned long int num2, num3, num4;
 
 	num2 = 0;
 	num3 = 1;
 	for (num1 = 0; num1 < 98; num1++)
 	{
 		num4 = num2 + num3;
-		printf("%llu", num4);
+		if (num1 == 88)
+		{
+		printf("%d", num4 / 10000000000);
+		printf("%d", num4 % 10000000000);
+		}
+		else
+		{
+		printf("%lu", num4);
+		}
 		if (num1 < 97)
 		{
 			printf(", ");
