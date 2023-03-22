@@ -7,7 +7,7 @@
  *Return: absolute value
  *
  */
-int _abs(int)
+int _abs(int num)
 {
 	int absolute;
 
@@ -17,7 +17,7 @@ int _abs(int)
 	}
 	else
 	{
-		absolute = nuum;
+		absolute = num;
 	}
 	return (absolute);
 }
