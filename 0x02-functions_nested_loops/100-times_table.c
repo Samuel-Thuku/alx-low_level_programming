@@ -8,6 +8,11 @@ void print_times_table(int n)
 		for (num2 = 0; num2 <= n; num2++)
 		{
 			product = num1 * num2;
+			if (num2 > 0 && num2 <= n)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 			if (product < 10)
 			{
 				if (num2 > 0 && num2 <= n)
@@ -16,6 +21,12 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 				_putchar('0' + product);
+			}
+			else if (product < 100)
+			{
+				_putchar(' ');
+				_putchar('0' + (product / 10));
+				_putchar('0' + (product % 10));
 			}
 			if (num2 < n)
 			{
