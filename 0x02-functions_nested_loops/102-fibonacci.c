@@ -14,7 +14,11 @@ int main(void)
 	for (num1 = 0; num1 < 50; num1++)
 	{
 		num4 = num2 + num3;
-		printf("%ld, ", num4);
+		printf("%ld", num4);
+		if (num1 > 0 && num1 < 49)
+		{
+			printf(", ");
+		}
 		num2 = num3;
 		num3 = num4;
 	}
