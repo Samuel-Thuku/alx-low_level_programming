@@ -15,7 +15,7 @@ int main(void)
 	{
 		num4 = num2 + num3;
 		printf("%ld", num4);
-		if (num1 > 0 && num1 < 49)
+		if (num1 < 49)
 		{
 			printf(", ");
 		}
