@@ -7,7 +7,7 @@ void print_times_table(int n)
 {
 	int num, product;
 
-	if (n > 0 && n < 16)
+	if (n >= 0 && n < 16)
 	{
 		num = 0;
 		while (num <= n)
@@ -15,7 +15,7 @@ void print_times_table(int n)
 			num = 0;
 			while (num <= n)
 			{
-				product = n * n;
+				product = num * n;
 				if (product < 10)
 				{
 					_putchar(' ');
