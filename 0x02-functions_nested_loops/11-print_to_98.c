@@ -6,17 +6,31 @@
 *
 *Return: num the number being printed out
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
-	while (n <= 98)
+	if (n <= 98)
 	{
-		return (n);
-		if (n < 98)
+		while (n <= 98)
 		{
-			_putchar(',');
-			_putchar(' ');
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(",");
+			}
+			n++;
 		}
-		_putchar('\n');
-		n++;
 	}
+	else
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(",");
+			}
+			n--;
+		}
+	}
+	printf("\n");
 }
