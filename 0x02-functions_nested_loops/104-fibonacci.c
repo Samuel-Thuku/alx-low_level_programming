@@ -31,7 +31,7 @@ int main(void)
 	{
 		num4_1 = num2_1 + num3_1;
 		num4_2 = num2_2 + num3_2;
-		if (num2_2 + num3_2 > 999999999)
+		if ((num2_2 + num3_2) > 999999999)
 		{
 			num4_1 = num4_1 + 1;
 			num4_2 = num4_2 % 10000000000;
