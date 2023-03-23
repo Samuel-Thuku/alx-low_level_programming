@@ -11,7 +11,7 @@ void print_diagonal(int n)
 	num1 = 0;
 	while (n > 0)
 	{
-		num1 = num2;
+		num2 = num1;
 		while (num2 > 0)
 		{
 			_putchar(' ');
