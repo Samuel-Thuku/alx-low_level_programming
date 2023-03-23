@@ -5,6 +5,10 @@
  */
 void print_square(int size)
 {
+	if (size < 1)
+	{
+		_putchar('\n');
+	}
 	int num1, num2;
 
 	for (num1 = size; num > 0; num--)
@@ -13,10 +17,6 @@ void print_square(int size)
 		{
 			_putchar('#');
 		}
-		_putchar('\n');
-	}
-	if (size < 1)
-	{
 		_putchar('\n');
 	}
 }
