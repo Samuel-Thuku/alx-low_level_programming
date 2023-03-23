@@ -9,7 +9,7 @@ void print_triangle(int size)
 	int num1, num2, num3;
 
 	num1 = 0;
-	num2 = size -1;
+	num2 = size - 1;
 	while (num1 < size)
 	{
 		num2 = size - 1 - num1;
