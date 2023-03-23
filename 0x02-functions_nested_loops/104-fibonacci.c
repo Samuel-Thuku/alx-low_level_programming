@@ -29,7 +29,7 @@ int main(void)
 		num4_2 = num2_2 + num3_2;
 		if ((num2_2 + num3_2) > 999999999)
 		{
-			num4_1 = num4_1 + 2;
+			num4_1 = num4_1 + 1;
 			num4_2 = num4_2 % 10000000000;
 		}
 		printf("%lu%lu", num4_1, num4_2);
