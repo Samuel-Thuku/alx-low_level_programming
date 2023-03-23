@@ -5,18 +5,9 @@
  */
 void print_line(int n)
 {
-	int num;
-
-	if (n > 0)
+	for (; n > 0; n--)
 	{
-		for (num = 0; num <= n; num++)
-		{
-			_putchar('_');
-		}
-		_putchar('\n');
+		_putchar(095);
 	}
-	else
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
