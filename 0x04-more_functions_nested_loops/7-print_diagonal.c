@@ -11,11 +11,9 @@ void print_diagonal(int n)
 	num1 = 0;
 	while (n > 0)
 	{
-		num2 = num1;
-		while (num2 > 0)
+		for (num2 = num1; num2 > 0; num2--)
 		{
 			_putchar(' ');
-			num2--;
 		}
 		_putchar('\\');
 		_putchar('\n');
