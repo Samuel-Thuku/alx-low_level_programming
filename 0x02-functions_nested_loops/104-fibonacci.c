@@ -16,10 +16,6 @@ int main(void)
 	{
 		num4 = num2 + num3;
 		printf("%lu", num4);
-		if (num1 < 97)
-		{
-			printf(", ");
-		}
 		num2 = num3;
 		num3 = num4;
 	}
