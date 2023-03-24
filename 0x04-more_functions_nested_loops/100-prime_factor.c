@@ -1,5 +1,5 @@
 #include <stdio.h>
-/**
+#include <math.h>/**
 *main - Entry point
 *
 *Return: Always 0 (Success)
@@ -11,9 +11,9 @@ int main(void)
 
 	number = 612852475143;
 	square = sqrt(number);
-	for (num1 = 1, num1 <= square; num1++)
+	for (num1 = 1; num1 <= square; num1++)
 	{
-		if (number % x == 0)
+		if (number % num1 == 0)
 		{
 			num2 = number / num1;
 		}
