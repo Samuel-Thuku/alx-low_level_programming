@@ -19,6 +19,4 @@ void rev_string(char *s)
 		*num1 = *num2;
 		*num2 = letter1;
 	}
-
-  return s;
 }
