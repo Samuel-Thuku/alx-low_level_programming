@@ -7,12 +7,14 @@
 */
 void rev_string(char *s)
 {
-	int num1, num2;
+	int num1, num2, num3;
+	char string[];
 
 	num2 = strlen(s);
-	for (num1 = 0; num1 < num2; num1++)
+	num3 = num2;
+	for (num1 = 0; num1 < num3; num1++)
 	{
-		s[num1] = s[(num2 - 1)];
-		num2--;
+		string[num1] = s[(num3 - 1)];
+		num3--;
 	}
 }
