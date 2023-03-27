@@ -1,4 +1,5 @@
-#include "main.h" 
+#include "main.h"
+#include <string.h>
 /**
   * rev_string - Reverses a string
   * @s: The string to be modified
@@ -7,27 +8,14 @@
   */
 void rev_string(char *s)
 {
-	int i, c, k;
-	char *a, aux;
+	int num1, num2;
+	char letter;
 
-	a = s;
-
-	while (s[c] != '\0')
+	num1 = strlen(s);
+	for (num2 = 0; num2 < num1; num2++)
 	{
-		c++;
-	}
-
-	for (k = 1; k < c; k++)
-	{
-		a++;
-	}
-
-	for (i = 0; i < (c / 2); i++)
-	{
-		aux = s[i];
-		s[i] = *a;
-		*a = aux;
-		a--;
+		letter = s[num2];
+		s[num2] = s[num1];
+		s[num1] = letter;
 	}
 }
-
