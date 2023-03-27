@@ -10,7 +10,7 @@ void rev_string(char *s)
 	int num1, num2;
 	char letter;
 
-	num2 = strlen[s];
+	num2 = strlen(s);
 	for (num1 = 0; num1 < (num2 / 2); num1++)
 	{
 		letter = s[num1];
