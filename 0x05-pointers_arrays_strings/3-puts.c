@@ -6,5 +6,11 @@
 */
 void _puts(char *str)
 {
-	_putchar(*str);
+	int num1, num2;
+
+	num2 = strlen(str);
+	for (num1 = 0; num1 < num2; num1++)
+	{
+	_putchar(*str[num1]);
+	}
 }
