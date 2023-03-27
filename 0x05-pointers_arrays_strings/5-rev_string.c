@@ -10,7 +10,8 @@ void rev_string(char *s)
 	int num1, num2;
 
 	num2 = strlen(s);
-	for (num1 = 0; num1 < (num2 / 2); num1++)
+	num3 = num2;
+	for (num1 = 0; num1 < (num3 / 2); num1++)
 	{
 		s[num1] = s[(num2 -1)];
 	}
