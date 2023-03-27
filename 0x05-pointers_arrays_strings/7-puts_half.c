@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 /**
 *puts_half - prints half the string.
 *@str: the dtring to be displayed.
