@@ -11,10 +11,11 @@ void rev_string(char *s)
 	char letter;
 
 	num1 = strlen(s);
-	for (num2 = 0; num2 < (num1 /2); num2++)
+	for (num2 = 0; num2 < (num1 / 2); num2++)
 	{
 		letter = s[num2];
 		s[num2] = s[(num1 - 1)];
 		s[(num1 - 1)] = letter;
+		num1--;
 	}
 }
