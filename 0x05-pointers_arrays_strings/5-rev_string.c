@@ -15,7 +15,7 @@ void rev_string(char *s)
 	for (num2 = 0; num2 <= num1 / 2; num2++)
 	{
 		letter = s[num2];
-		s[num2] = s[num1];
-		s[num1] = letter;
+		s[num2] = s[num1 - 1];
+		s[num1 - 1] = letter;
 	}
 }
