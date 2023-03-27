@@ -12,5 +12,6 @@ void _puts(char *str)
 	for (num1 = 0; num1 < num2; num1++)
 	{
 	_putchar(str[num1]);
+	_putchar('\n');
 	}
 }
