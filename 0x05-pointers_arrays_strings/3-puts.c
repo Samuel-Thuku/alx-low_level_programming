@@ -5,5 +5,8 @@
 */
 void _puts(char *str)
 {
-	_puts(*str);
+	char string;
+
+	string[] = *str
+	_puts(string);
 }
