@@ -6,5 +6,6 @@
 */
 void _puts(char *str)
 {
+	char str;
 	*str = str;
 }
