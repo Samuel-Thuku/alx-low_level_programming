@@ -17,5 +17,6 @@ void rev_string(char *s)
 		letter = s[num2];
 		s[num2] = s[num1 - 1];
 		s[num1 - 1] = letter;
+		num1--;
 	}
 }
