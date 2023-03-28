@@ -12,7 +12,6 @@ int _atoi(char *s)
 
 	num2 = strlen(s);
 	num3 = 0;
-	num4 = 4;
 	for (num1 = 0; num1 < num2; num1++)
 	{
 		if (s[num1] >= 48 && s[num1] <= 57)
