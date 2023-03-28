@@ -9,9 +9,10 @@
 */
 char *_strcpy(char *dest, char *src)
 {
-	int num1;
+	int num1, num2;
 
-	for (num1 = 0; src[num1] != '\0'; num1++)
+	num2 = strlen(src);
+	for (num1 = 0; num1 < num2; num1++)
 	{
 		dest[num1] = src[num1];
 	}
