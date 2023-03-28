@@ -14,6 +14,6 @@ int _atoi(char *s)
 	for (num1 = 0; num1 < num2; num1++)
 	{
 		num1 = s[num1] - 48;
+		return (num1);
 	}
-	return (num1);
 }
