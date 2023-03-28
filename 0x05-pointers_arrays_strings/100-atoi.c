@@ -17,4 +17,5 @@ int _atoi(char *s)
 		num3 = (num3 * 10) + (s[num1] - 48);
 	}
 	return (num3);
+	return (0);
 }
