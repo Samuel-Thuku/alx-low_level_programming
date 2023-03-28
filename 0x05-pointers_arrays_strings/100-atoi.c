@@ -8,7 +8,7 @@
 */
 int _atoi(char *s)
 {
-	int num1, num2, num3, num4;
+	int num1, num2, num3;
 
 	num2 = strlen(s);
 	num3 = 0;
