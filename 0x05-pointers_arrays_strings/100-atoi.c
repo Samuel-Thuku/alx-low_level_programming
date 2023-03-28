@@ -8,35 +8,35 @@
  */
 int _atoi(char *s)
 {
-	int i, d, n, len, f, digit;
+	int num1, num2, num3, num4, num5, num6;
 
-	i = 0;
-	d = 0;
-	n = 0;
-	len = 0;
-	f = 0;
-	digit = 0;
+	num1 = 0;
+	num2 = 0;
+	num3 = 0;
+	num4 = 0;
+	num5 = 0;
+	num6 = 0;
 
-	while (s[len] != '\0')
-		len++;
+	while (s[num4] != '\0')
+		num4++;
 
-	while (i < len && f == 0)
+	while (num1 < num4 && num5 == 0)
 	{
-		if (s[i] == '-')
-			++d;
+		if (s[num1] == '-')
+			++num2;
 
-		if (s[i] >= '0' && s[i] <= '9')
+		if (s[num1] >= '0' && s[num1] <= '9')
 		{
-			digit = s[i] - '0';
-			if (d % 2)
-				digit = -digit;
-			n = n * 10 + digit;
-			f = 1;
-			if (s[i + 1] < '0' || s[i + 1] > '9')
+			num6 = s[num1] - '0';
+			if (num2 % 2)
+				num6 = -num6;
+			num3 = num3 * 10 + num6;
+			num5 = 1;
+			if (s[num1 + 1] < '0' || s[num1 + 1] > '9')
 				break;
-			f = 0;
+			num5 = 0;
 		}
-		i++;
+		num1++;
 	}
 
 	if (f == 0)
