@@ -14,7 +14,7 @@ int _atoi(char *s)
 	num3 = 0;
 	for (num1 = 0; num1 < num2; num1++)
 	{
-		if (s[num1] == '-')
+		if (s[num1] == 45)
 		{
 			num3 = -1;
 		}
