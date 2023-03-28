@@ -8,12 +8,12 @@
 */
 int _atoi(char *s)
 {
-	int num1, num2, num3;
+	int num1, num2;
 
 	num1 = strlen(s);
 	for (num2 = 0; num2 < num1; num2++)
 	{
-		num3 = s[num2] - 48;
+		s[num2] = s[num2] - 48;
 	}
 	return (0);
 }
