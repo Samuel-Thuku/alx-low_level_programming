@@ -39,9 +39,9 @@ int _atoi(char *s)
 		num1++;
 	}
 
-	if (f == 0)
+	if (num5 == 0)
 		return (0);
 
-	return (n);
+	return (num3);
 }
 
