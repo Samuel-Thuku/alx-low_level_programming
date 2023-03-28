@@ -13,7 +13,7 @@ int _atoi(char *s)
 	num1 = strlen(s);
 	for (num2 = 0; num2 < num1; num2++)
 	{
-		s[num2] =s[num2] - 48;
+		s[num2] = s[num2] - '0';
 	}
 	return (0);
 }
