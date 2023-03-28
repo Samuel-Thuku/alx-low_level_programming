@@ -14,10 +14,6 @@ int _atoi(char *s)
 	num3 = 0;
 	for (num1 = 0; num1 < num2; num1++)
 	{
-		if (s[num1] == 45)
-		{
-			num3 = -1;
-		}
 		num3 = (num3 * 10) + (s[num1] - 48);
 	}
 	return (num3);
