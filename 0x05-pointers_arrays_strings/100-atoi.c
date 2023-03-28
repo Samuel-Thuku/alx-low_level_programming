@@ -16,11 +16,11 @@ int _atoi(char *s)
 	{
 		if (s[num1] >= 48 && s[num1] <= 57)
 		{
+			num3 = (num3 * 10) + (s[num1] - 48);
 			if (s[num1 - 1] == 45)
 			{
-				num3 = -1;
+				num3 = num3 * -1;
 			}
-			num3 = (num3 * 10) + (s[num1] - 48);
 		}
 	}
 	return (num3);
