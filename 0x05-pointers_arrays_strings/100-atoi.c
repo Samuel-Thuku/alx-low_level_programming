@@ -10,12 +10,10 @@ int _atoi(char *s)
 {
 	int num1, num2, num3;
 
-	num1 = strlen(s);
-	num3 = 0;
-	for (num2 = 0; num2 < num1; num2++)
+	num2 = strlen(s);
+	for (num1 = 0; num1 < num2; num1++)
 	{
-		num3 = num3 * 10 + (s[num2] - 48);
-		s[num2] = num3;
+		num3 = s[num1] - 48;
 	}
-	return (0);
+	return (num3);
 }
