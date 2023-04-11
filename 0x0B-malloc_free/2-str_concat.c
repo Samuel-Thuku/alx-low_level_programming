@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-
 /**
 *str_concat - concatenates two strings of any size
 *@s1: the first string to concatenate
@@ -29,13 +28,11 @@ char *str_concat(char *s1, char *s2)
 	}
 	num4 = num1 + num2;
 	s = malloc((sizeof(char) * num4) + 1);
-
 	if (s == NULL)
 	{
 		return (NULL);
 	}
 	num2 = 0;
-
 	while (num3 < num4)
 	{
 		if (num3 <= num1)
@@ -47,10 +44,8 @@ char *str_concat(char *s1, char *s2)
 			s[num3] = s2[num2];
 			num2++;
 		}
-
 		num3++;
 	}
-
 	s[num3] = '\0';
 	return (s);
 }
