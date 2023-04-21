@@ -13,7 +13,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int num;
 
 	va_start(listNums, n);
-	for (num = 0; num < 0; num++)
+	for (num = 0; num < n; num++)
 	{
 		printf("%d", va_arg(listNums, int));
 		if (num != (n - 1) && separator != NULL)
