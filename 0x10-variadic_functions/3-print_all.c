@@ -8,11 +8,10 @@
 void print_all(const char * const format, ...)
 {
 	int num;
-	char *string, *separator;
+	char *string, *separator = "";
 	va_list list1;
 
 	num = 0;
-	*separator = "";
 	va_start(list1, format);
 	if (format)
 	{
@@ -22,17 +21,20 @@ void print_all(const char * const format, ...)
 			{
 				case 'c':
 				printf("%s%c", separator, va_arg(list1, int));
+				break;
 				case 'i':
 				printf("%s%d", separator, va_arg(list1, int));
+				break;
 				case 'f':
 				printf("%s%f", separator, va_arg(list1, double));
+				break;
 				case 's':
 				string = va_arg(list1, char *);
 				if (!string)
 				{
 					string = "(nil)";
 				}
-				printf("%s%c", separator, string);
+				printf("%s%s", separator, string);
 				break;
 				default:
 				num++;
@@ -43,5 +45,5 @@ void print_all(const char * const format, ...)
 		}
 	}
 	printf("\n");
-	va_end(list);
+	va_end(list1);
 }
