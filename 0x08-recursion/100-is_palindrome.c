@@ -34,11 +34,10 @@ int checkPalindrome(char *s)
 }
 
 /**
-  * _strlen_recursion - Get the length of a string
-  * @s: the string to get the length
-  *
-  * Return: the string length
-  */
+*_strlen_recursion - get the length of a string
+*@s: the string to get the length
+*Return: the string length
+*/
 int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
