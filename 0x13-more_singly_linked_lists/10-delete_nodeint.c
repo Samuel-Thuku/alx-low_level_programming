@@ -3,19 +3,20 @@
 #include "lists.h"
 
 /**
-  * delete_nodeint_at_index - ...
-  * @head: ...
-  * @index: ...
-  *
-  * Return: ...
-  */
+* delete_nodeint_at_index - a function that deletes the node at index index of a listint_t linked list.
+* @head: the head of a linked list
+* @index: is the index of the node that should be deleted.
+* Return: 1 if it succeeded, -1 if it failed
+**/
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	unsigned int count = 1;
+	unsigned int num = 1;
 	listint_t *new = *head, *temp;
 
 	if (!head || !*head)
+	{
 		return (-1);
+	}
 
 	if (index == 0)
 	{
@@ -27,7 +28,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	temp = *head;
 	while (temp)
 	{
-		if (count == index)
+		if (num == index)
 		{
 			new = temp->next;
 			temp->next = new->next;
@@ -36,7 +37,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		}
 
 		temp = temp->next;
-		count++;
+		num++;
 	}
 
 	return (-1);
