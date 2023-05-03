@@ -33,7 +33,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 					pos->next = newNode;
 					return (newNode);
 				}
-				iter = iter->next;
+				pos = pos->next;
 				num++;
 			}
 			if (idx > num)
